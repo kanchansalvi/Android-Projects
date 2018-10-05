@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="myNote">My Notes</string>
+    <string name="save">SAVE</string>
+</resources>
