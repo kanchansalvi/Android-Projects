@@ -101,7 +101,6 @@ public class IdeaAdapter extends ArrayAdapter<MyIdea>{
                 ideaDetail.putExtra("id", mId);
                 getContext().startActivity(ideaDetail);
 
-
             }
         });
         return row;

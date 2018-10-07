@@ -8,52 +8,71 @@
     android:paddingBottom="20dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
+    android:background="#b7f5e6"
     tools:context=".IdeaDetails">
 
     <TextView
         android:id="@+id/detailsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="My Idea"
-        android:textSize="20sp"
-        android:textColor="#FF847f6a"
+        android:layout_alignParentStart="true"
+        android:text="My Idea "
+        android:textSize="25sp"
+        android:textColor="#229b95"
         android:textStyle="bold"
-        android:layout_marginTop="160dp" />
-
-    <TextView
-        android:id="@+id/detailsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="My idea..."
-        android:textColor="#FF847F6A"
-        android:textStyle="italic"
-        android:gravity="center"
-        android:textAlignment="center"/>
-
+        android:layout_marginTop="50dp" />
 
     <TextView
         android:id="@+id/detailsDateView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:text="Date here"
-       android:textStyle="italic"
-        android:layout_below="@id/detailsTextView"
+        android:textStyle="italic"
+        android:layout_below="@id/detailsTitle"
         android:layout_alignParentEnd="true"
         android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/detailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/detailsDateView"
+        android:layout_marginTop="10dp"
+        android:text="My idea description..."
+        android:textColor="#229b95"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:gravity="start"
+        android:textAlignment="textStart"/>
+
 
     <Button
         android:id="@+id/deleteBtn"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:background="#06d48f"
         android:layout_below="@id/detailsTextView"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:text="DELETE"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentStart="true"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="DELETE IDEA"
         android:textStyle="bold"
         />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#06d48f"
+        android:layout_below="@id/detailsTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="EDIT MY IDEA"
+        android:textStyle="bold"/>
 
 </RelativeLayout>

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private  EditText desc;
     public Button saveBtn;
     private DatabaseHandler dba;
+     int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +31,21 @@ public class MainActivity extends AppCompatActivity {
          desc =  findViewById(R.id.ideaDescription);
         saveBtn =  findViewById(R.id.saveBtn);
 
+        final Bundle extras = getIntent().getExtras();
+
+        if(extras != null){
+            title.setText(extras.getString("title"));
+            desc.setText(extras.getString("content"));
+             id = extras.getInt("id");
+        }
+
         saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(extras != null){
+                    DatabaseHandler dba = new DatabaseHandler(getApplicationContext());
+                    dba.deleteIdea(id);
+                }
                 saveToDB();
             }
         });

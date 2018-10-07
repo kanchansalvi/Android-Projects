@@ -14,7 +14,8 @@ import data.DatabaseHandler;
 public class IdeaDetails extends AppCompatActivity {
 
     private TextView title, detail, date;
-    private Button deleteBtn;
+    private Button deleteBtn, editBtn;
+    private int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class IdeaDetails extends AppCompatActivity {
         detail = findViewById(R.id.detailsTextView);
         date = findViewById(R.id.detailsDateView);
         deleteBtn = findViewById(R.id.deleteBtn);
+        editBtn = findViewById(R.id.editBtn);
 
         Bundle extras = getIntent().getExtras();
 
@@ -33,10 +35,8 @@ public class IdeaDetails extends AppCompatActivity {
             date.setText(extras.getString("dateText"));
             detail.setText(extras.getString("content"));
 
-            final int id = extras.getInt("id");
-
-            Log.v("Bundle ID ::", String.valueOf(id));
-
+             id = extras.getInt("id");
+        }
 
             deleteBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -45,11 +45,22 @@ public class IdeaDetails extends AppCompatActivity {
                     DatabaseHandler dba = new DatabaseHandler(getApplicationContext());
                     dba.deleteIdea(id);
 
-                    Toast.makeText(getApplicationContext(), "Wish Deleted", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Your Idea is Deleted", Toast.LENGTH_LONG).show();
                     startActivity(new Intent(IdeaDetails.this, DisplayIdeas.class));
                 }
             });
+        editBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        }
+                Intent editIdea = new Intent(IdeaDetails.this, MainActivity.class);
+                editIdea.putExtra("title", title.getText());
+                editIdea.putExtra("content", detail.getText());
+                editIdea.putExtra("id", id);
+                startActivity(editIdea);
+            }
+        });
+
+
     }
 }

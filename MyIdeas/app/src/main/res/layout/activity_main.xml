@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#cc89f2"
+    android:background="#cdf7ef"
     tools:context=".MainActivity">
 
     <TextView
@@ -28,7 +28,7 @@
         android:layout_below="@+id/ideaHeader"
         android:inputType="text"
         android:layout_marginTop="25dp"
-        android:background="#f2d9f4"
+        android:background="#5defcc"
         />
 
     <EditText
@@ -41,7 +41,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/ideaTitle"
         android:layout_marginTop="15dp"
-        android:background="#f2d9f4"
+        android:background="#5defcc"
         android:gravity="start"
         android:textAlignment="textStart"
         android:inputType="text"
@@ -54,7 +54,7 @@
         android:layout_below="@+id/ideaDescription"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:background="#a751c9"
+        android:background="#5defcc"
         android:text="@string/saveBtn"
         android:textStyle="bold"/>
 </RelativeLayout>
