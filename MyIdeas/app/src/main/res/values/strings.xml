@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Ideas</string>
+    <string name="ideaHeader">My Idea</string>
+    <string name="titleHint">Give Title</string>
+    <string name="saveBtn">SAVE MY IDEA ... </string>
+    <string name="descHint">Enter Decription of your Idea ...</string>
+</resources>
