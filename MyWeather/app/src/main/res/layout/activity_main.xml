@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:background="#c263b7f1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spokane, WA"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/cityName"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 deg "
+        android:textColor="#FFF"
+        android:textSize="45sp"
+        android:layout_below="@id/cityName"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"/>
+    
+    <TextView
+        android:id="@+id/windText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"
+        android:layout_marginTop="55dp"
+        android:textSize="18sp"
+        android:text="Wind : "
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/cloudText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/windText"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:text="Cloud : "
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/pressureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cloudText"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:text="Pressure : "
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/humidityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressureText"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:text="Humidity : "
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/sunriseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidityText"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:text="Sunrise : "
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/sunsetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sunriseText"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:text="Sunset : "
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/updateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sunsetText"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Last Updated : "
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>
