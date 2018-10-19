@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afc8f1"
+    tools:context=".Activity.WeatherSettings">
+
+    <TextView
+        android:id="@+id/citytxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your preferred city : "
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/cityPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/citytxt"
+        android:hint="Paris"
+        android:paddingStart="0dp"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select temperature unit : "
+        android:layout_below="@id/cityPref"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/tempPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/temp"
+        android:paddingStart="60dp"
+        android:checkedButton="@id/degree">
+
+            <RadioButton
+                android:id="@+id/degree"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="° C"/>
+
+            <RadioButton
+                android:id="@+id/farenheit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="° F" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/windSpeedPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select wind speed unit : "
+        android:layout_below="@id/tempPref"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:paddingStart="30dp"
+        android:paddingTop="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/speedPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/windSpeedPref"
+        android:paddingStart="60dp"
+        android:checkedButton="@id/kph">
+
+        <RadioButton
+            android:id="@+id/kph"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="kph"/>
+
+        <RadioButton
+            android:id="@+id/mph"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="mph" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/pressuretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your unit for Pressure : "
+        android:layout_below="@id/speedPref"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:paddingStart="30dp"
+        android:paddingTop="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/pressurePref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/pressuretxt"
+        android:paddingStart="60dp"
+        android:checkedButton="@id/in">
+
+        <RadioButton
+            android:id="@+id/mb"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="mb"/>
+
+        <RadioButton
+            android:id="@+id/in"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="in" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/precipitationtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your unit for precipitation : "
+        android:layout_below="@id/pressurePref"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:paddingStart="30dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/precipitationPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/precipitationtxt"
+        android:paddingStart="60dp"
+        android:paddingBottom="30dp"
+        android:checkedButton="@id/mm">
+
+        <RadioButton
+            android:id="@+id/mm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="mm"/>
+
+        <RadioButton
+            android:id="@+id/precin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="in" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#578af9"
+        android:layout_below="@id/precipitationPref"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

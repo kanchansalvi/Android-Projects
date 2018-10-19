@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#c3c8ff"
+    tools:context=".Activity.MainActivity">
+
+<TextView android:id="@+id/cityname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/defaultCity"
+    android:textStyle="bold"
+    android:textSize="25sp"
+    android:paddingTop="20dp"
+    android:paddingBottom="0dp"
+    android:layout_centerHorizontal="true"
+    />
+
+    <TextView android:id="@+id/countryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:layout_below="@id/cityname"
+        android:text="@string/defaultCountry"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:paddingTop="0dp"
+        android:text="@string/defaultTemperature"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/countryname"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/windSpeed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/temperature"
+    android:text="@string/windspeed"
+    android:textStyle="normal"
+    android:textSize="18sp"
+    android:layout_alignParentStart="true"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+    />
+
+    <TextView
+        android:id="@+id/windDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/windSpeed"
+        android:text="@string/windDirection"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:paddingStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/windDirection"
+        android:text="@string/pressure"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:paddingStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/precipitation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressure"
+        android:text="@string/precipitation"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:paddingStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/precipitation"
+        android:text="@string/humidity"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:paddingStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidity"
+        android:text="@string/cloud"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:paddingStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/lastUpdateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cloud"
+        android:paddingTop="30dp"
+        android:text="Last Updated"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/lastUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastUpdateTxt"
+        android:text="@string/lastUpdate"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>

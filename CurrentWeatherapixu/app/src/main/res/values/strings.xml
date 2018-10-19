@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CurrentWeather-apixu</string>
+    <string name="defaultCity">Mascote, Bahia</string>
+    <string name="defaultCountry">Brazil</string>
+    <string name="defaultTemperature">20° C</string>
+    <string name="windspeed">Wind Speed : 9.0 km/hr</string>
+    <string name="windDirection">Wind Direction : NE</string>
+    <string name="pressure">Pressure : 30.4 in</string>
+    <string name="precipitation">Precipitation : 0.0 mm</string>
+    <string name="humidity">Humidity : 79</string>
+    <string name="cloud">Cloud : 25</string>
+    <string name="lastUpdate">2018-10-13 19:00</string>
+</resources>
