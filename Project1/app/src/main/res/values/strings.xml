@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Project1</string>
-    <string name="WelcomeText">Welcome !!!</string>
-    <string name="nameText">Hello Sam</string>
-    <string name="todo">TODO</string>
-    <string name="yourcontent">Your Content here</string>
-</resources>
